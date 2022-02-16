@@ -1,0 +1,60 @@
+.title-word {
+  animation: color-animation 2s ease-in infinite;
+}
+
+.title-word-1 {
+  --color-1: #df8453;
+  --color-2: #3d8dae;
+  --color-3: #e4a9a8;
+  --color-4: #accfcb;
+  --color-5: #e4a9a8;
+  --color-6: #accfcb;
+}
+
+.title-word-2 {
+  --color-1: #dbad4a;
+  --color-2: #accfcb;
+  --color-3: #17494d;
+  --color-4: #3d8dae;
+  --color-5: #df8453;
+  --color-6: #e4a9a8;
+}
+
+@keyframes color-animation {
+  0% {
+    color: var(--color-1);
+  }
+  32% {
+    color: var(--color-2);
+  }
+  33% {
+    color: var(--color-3);
+  }
+  65% {
+    color: var(--color-4);
+  }
+  66% {
+    color: var(--color-5);
+  }
+  99% {
+    color: var(--color-6);
+  }
+  100% {
+    color: var(--color-4);
+  }
+}
+
+/* Here are just some visual styles. 🖌 */
+
+.container-title {
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+  text-transform: uppercase;
+}

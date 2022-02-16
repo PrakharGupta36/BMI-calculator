@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="button.css" />
+    <link rel="icon" href="icon.png" />
+    <title>BMI Calculator</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+  </head>
+  <body>
+    <div class="container-title">
+      <h2 class="title">
+        <span class="title-word title-word-1">BMI</span>
+        <span class="title-word title-word-2">Calculator</span>
+      </h2>
+    </div>
+    <div class="container">
+      <div class="height">
+        <input type="number" placeholder="Enter you height in cm" id="height" />
+      </div>
+      <div class="weight">
+        <input
+          type="number"
+          placeholder="Enter your weight in kg"
+          id="weight"
+        />
+      </div>
+    </div>
+    <div class="display">
+      <div class="submit">
+        <button class="button-30" id="submit">Submit</button>
+      </div>
+      <p id="answer"></p>
+    </div>
+    <div class="graph">
+      <canvas
+        id="myChart"
+        style="width: 100%; max-height: 300px; max-width: 700px"
+      ></canvas>
+    </div>
+    <div class="data-container">
+      <h5> Recent BMI Data </h5>
+    </div>
+    <footer>
+      Made by
+      <a href="https://twitter.com/prakhar_369" target="_blank"> Prakhar ❤️ </a>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

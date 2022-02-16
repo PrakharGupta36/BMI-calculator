@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700&display=swap");
+
+@import url(./text.css);
+
+* {
+  font-family: Spartan;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: #1f1f1f;
+  color: white;
+  margin: 2rem 0;
+}
+
+a,
+button {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+  gap: 1rem;
+}
+
+.container input {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 0.3rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.display {
+  display: grid;
+  place-items: center;
+}
+
+#answer {
+  margin: 1rem 0;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  font-style: italic;
+}
+
+footer {
+  text-align: center;
+  font-size: small;
+}
+
+footer a {
+  color: white;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.graph {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.data-container{
+  display: grid;
+  place-items: center;
+  margin-bottom: 5rem;
+  background-color: rgba(128, 128, 128, 0.274);
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.data-inner {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  background-color: #1f1f1f;
+  padding: 1rem;
+  border-radius: 0.5rem;
+
+}
+
+.data-container h4 {
+  grid-row: 1;
+  grid-column: 2/3;
+}
+
+.weightText,
+.heightText,
+.dateText {
+  grid-row: 2;
+  font-size: .7rem;
+}
+
+@media screen and (max-width: 600px) {
+  .data-container h4 {
+    font-size: 12.5px;
+  }
+  .weightText,
+  .heightText,
+  .dateText {
+    font-size: 10px;
+  }
+}
