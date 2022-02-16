@@ -3,7 +3,7 @@ let weight = document.getElementById("weight");
 let answer = document.getElementById("answer");
 const submit = document.getElementById("submit");
 
-var audio = new Audio("click.mp3");
+var audio = new Audio("assets/click.mp3");
 const ctx = document.getElementById("myChart").getContext("2d");
 var currentDate = new Date();
 var day = currentDate.getDate();
